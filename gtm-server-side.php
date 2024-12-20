@@ -11,7 +11,7 @@
  * Plugin Name:       GTM Server Side (Forked per Ingenius)
  * Plugin URI:        https://wordpress.org/plugins/gtm-server-side/
  * Description:       Enhance conversion tracking by implementing server-side tagging using server Google Tag Manager container. Effortlessly configure data layer events in web GTM, send webhooks, set up custom loader, and extend cookie lifetime.
- * Version:           3.0.0
+ * Version:           3.0.1
  * Author:            Ingenius
  * Author URI:        https://ingenius.agency/
  * License:           GPL-2.0+
@@ -55,13 +55,10 @@ require 'plugin-update-checker/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 $myUpdateChecker = PucFactory::buildUpdateChecker(
-	'https://github.com/user-name/repo-name/',
+	'https://github.com/tristaningenius/gtm-server-side',
 	__FILE__,
-	'unique-plugin-or-theme-slug'
+	'gtm-server-side'
 );
 
 // Set the branch that contains the stable release.
-$myUpdateChecker->setBranch( 'stable-branch-name' );
-
-// Optional: If you're using a private repository, specify the access token like this:
-$myUpdateChecker->setAuthentication( 'your-token-here' );
+$myUpdateChecker->setBranch( 'main' );
