@@ -80,12 +80,13 @@ class GTM_Server_Side_Event_Purchase {
 		if ( ! ( $order instanceof WC_Order ) ) {
 			return;
 		}
-
+		
 		$excluded_statuses = array('processing', 'wfocu-pri-order', 'completed');
 
     	if ( !in_array( $order->get_status(), $excluded_statuses, true ) ) {
         return;
     	}
+
 
 		$data_layer = array(
 			'event'          => GTM_Server_Side_Helpers::get_data_layer_event_name( 'purchase' ),

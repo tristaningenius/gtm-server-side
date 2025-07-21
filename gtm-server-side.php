@@ -11,7 +11,7 @@
  * Plugin Name:       GTM Server Side (Forked per Ingenius)
  * Plugin URI:        https://wordpress.org/plugins/gtm-server-side/
  * Description:       Enhance conversion tracking by implementing server-side tagging using server Google Tag Manager container. Effortlessly configure data layer events in web GTM, send webhooks, set up custom loader, and extend cookie lifetime.
- * Version:           3.0.1
+ * Version:           3.1.0
  * Author:            Ingenius
  * Author URI:        https://ingenius.agency/
  * License:           GPL-2.0+
