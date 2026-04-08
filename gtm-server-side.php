@@ -50,6 +50,8 @@ add_action( 'gtm_server_side_frontend', array( GTM_Server_Side_Event_ViewCart::c
 add_action( 'gtm_server_side_frontend', array( GTM_Server_Side_Event_BeginCheckout::class, 'instance' ) );
 add_action( 'gtm_server_side_frontend', array( GTM_Server_Side_Event_Purchase::class, 'instance' ) );
 add_action( 'gtm_server_side_frontend', array( GTM_Server_Side_Event_AddToCart::class, 'instance' ) );
+add_action( 'gtm_server_side_frontend', array( GTM_Server_Side_Event_AddShippingInfo::class, 'instance' ) );
+add_action( 'gtm_server_side_frontend', array( GTM_Server_Side_Event_AddPaymentInfo::class, 'instance' ) );
 
 require 'plugin-update-checker/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
